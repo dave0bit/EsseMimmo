@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6878A862-9D2C-4E12-9540-E16DDC08DA3A}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EsseMimmo</RootNamespace>
+    <AssemblyName>EsseMimmo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\style.css" />
+    <Compile Include="MainActivity.cs" />
+    <AndroidAsset Include="Assets\AboutAssets.txt" />
+    <AndroidAsset Include="Assets\bootstrap\css\bootstrap-theme.css.map" />
+    <AndroidAsset Include="Assets\bootstrap\css\bootstrap.css.map" />
+    <AndroidAsset Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <AndroidAsset Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <AndroidAsset Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <AndroidAsset Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <AndroidAsset Include="Assets\fabric\css\fonts\SegoeUI-Semilight.woff2" />
+    <AndroidAsset Include="Assets\fabric\css\fonts\icons\office365icons.woff" />
+    <None Include="web.config" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <None Include="Views\RazorView.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>RazorView.cs</LastGenOutput>
+    </None>
+    <Compile Include="Views\RazorView.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RazorView.cshtml</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Views\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\css\bootstrap-theme.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\css\bootstrap-theme.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\css\bootstrap.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\css\bootstrap.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\js\bootstrap.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\js\bootstrap.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\js\listgroup.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\js\npm.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\bootstrap-table-locale-all.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\bootstrap-table-locale-all.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\bootstrap-table.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\bootstrap-table.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\bootstrap-table.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\bootstrap-table.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\angular\bootstrap-table-angular.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\angular\bootstrap-table-angular.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\cookie\bootstrap-table-cookie.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\cookie\bootstrap-table-cookie.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\editable\bootstrap-table-editable.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\editable\bootstrap-table-editable.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\export\bootstrap-table-export.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\export\bootstrap-table-export.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\filter\bootstrap-table-filter.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\filter\bootstrap-table-filter.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\filter-control\bootstrap-table-filter-control.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\filter-control\bootstrap-table-filter-control.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\flat-json\bootstrap-table-flat-json.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\flat-json\bootstrap-table-flat-json.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\group-by\bootstrap-table-group-by.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\group-by\bootstrap-table-group-by.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\group-by\bootstrap-table-group-by.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\key-events\bootstrap-table-key-events.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\key-events\bootstrap-table-key-events.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\mobile\bootstrap-table-mobile.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\mobile\bootstrap-table-mobile.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\multiple-search\bootstrap-table-multiple-search.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\multiple-search\bootstrap-table-multiple-search.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\multiple-sort\bootstrap-table-multiple-sort.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\multiple-sort\bootstrap-table-multiple-sort.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\natural-sorting\bootstrap-table-natural-sorting.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\natural-sorting\bootstrap-table-natural-sorting.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\reorder-columns\bootstrap-table-reorder-columns.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\reorder-columns\bootstrap-table-reorder-columns.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\reorder-rows\bootstrap-table-reorder-rows.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\reorder-rows\bootstrap-table-reorder-rows.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\reorder-rows\bootstrap-table-reorder-rows.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\resizable\bootstrap-table-resizable.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\resizable\bootstrap-table-resizable.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\toolbar\bootstrap-table-toolbar.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\extensions\toolbar\bootstrap-table-toolbar.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-af-ZA.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-af-ZA.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ar-SA.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ar-SA.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ca-ES.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ca-ES.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-cs-CZ.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-cs-CZ.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-da-DK.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-da-DK.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-de-DE.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-de-DE.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-el-GR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-el-GR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-en-US.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-en-US.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-AR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-AR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-CR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-CR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-ES.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-ES.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-MX.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-MX.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-NI.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-NI.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-SP.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-es-SP.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-et-EE.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-et-EE.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-fa-IR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-fa-IR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-fr-BE.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-fr-BE.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-fr-FR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-fr-FR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-hr-HR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-hr-HR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-hu-HU.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-hu-HU.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-it-IT.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-it-IT.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ja-JP.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ja-JP.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ka-GE.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ka-GE.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ko-KR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ko-KR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ms-MY.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ms-MY.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-nb-NO.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-nb-NO.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-nl-NL.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-nl-NL.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-pl-PL.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-pl-PL.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-pt-BR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-pt-BR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-pt-PT.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-pt-PT.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ro-RO.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ro-RO.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ru-RU.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ru-RU.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-sk-SK.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-sk-SK.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-sv-SE.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-sv-SE.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-th-TH.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-th-TH.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-tr-TR.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-tr-TR.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-uk-UA.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-uk-UA.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ur-PK.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-ur-PK.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-vi-VN.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-vi-VN.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-zh-CN.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-zh-CN.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-zh-TW.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bootstrap\table\locale\bootstrap-table-zh-TW.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\docs.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.components.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.components.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.components.rtl.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.components.rtl.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.rtl.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\css\fabric.rtl.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\js\jquery.fabric.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fabric\js\jquery.fabric.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\jquery-2.1.4.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
